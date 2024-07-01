@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notion風エディター</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .content {
+            width: 80%;
+            max-width: 800px;
+        }
+        .title {
+            font-size: 2rem;
+            color: #bbb;
+            margin-bottom: 20px;
+        }
+        .property {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .property span {
+            width: 100px;
+            color: #666;
+        }
+        .property .value {
+            flex: 1;
+            color: #bbb;
+        }
+        .add-property {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .comment-section {
+            margin-top: 20px;
+        }
+        .comment-section input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+        .footer {
+            color: #666;
+        }
+        .footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="title">Untitled</div>
+        <div class="property">
+            <span>著者</span>
+            <div class="value">Empty</div>
+        </div>
+        <div class="property">
+            <span>カバー画像</span>
+            <div class="value">Empty</div>
+        </div>
+        <div class="property">
+            <span>URL</span>
+            <div class="value">Empty</div>
+        </div>
+        <div class="property">
+            <span>ステータス</span>
+            <div class="value">Empty</div>
+        </div>
+        <div class="property">
+            <span>Finished</span>
+            <div class="value">Empty</div>
+        </div>
+        <div class="property">
+            <span>読了</span>
+            <input type="checkbox">
+        </div>
+        <div class="add-property">+ Add a property</div>
+        <div class="comment-section">
+            <input type="text" placeholder="Add a comment...">
+        </div>
+        <div class="footer">
+            Enterキーを押して空のページで続行するか、<a href="#">テンプレートを作成</a>してください。
+        </div>
+    </div>
+</body>
+</html>
