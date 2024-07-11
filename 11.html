@@ -1,0 +1,10 @@
+<!--includesとsomeの違い-->
+includes: const showSidebar = !hideSidebarPaths.includes(router.pathname);
+includesは、配列に特定の要素が含まれているかどうかをチェックします。
+router.pathnameがhideSidebarPaths配列の中に完全一致するものがあるかどうかを確認します。
+
+some: const showSidebar = !hideSidebarPaths.some((path) => router.pathname.startsWith(path));
+someは、配列の要素のうち少なくとも一つが指定した条件に一致するかどうかをチェックします。
+この場合、router.pathnameがhideSidebarPaths配列のいずれかの要素で始まるかどうかを確認します。これは動的ルート（例: /cards/[id]）をサポートするために有用です
+
+<!--編集画面のような動的ルートを考慮する場合は、someを使用することが適切です-->
