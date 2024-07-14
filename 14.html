@@ -1,0 +1,17 @@
+<!--usersコレクションとtasksコレクションを分けるDB設計-->
+/users
+  ├── {userId}
+  |    ├── email: string
+  |    ├── username: string
+  |    ├── profileImage: string
+  |    └── createdAt: timestamp
+/tasks
+  ├── {taskId}
+  |    ├── userId: string
+  |    ├── title: string
+  |    ├── author: string
+  |    ├── description: string
+  |    ├── coverImage: string
+  |    ├── status: string
+  |    ├── url: string
+  |    └── createdAt: timestamp
